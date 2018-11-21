@@ -9,12 +9,31 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="640dp"
-        android:layout_height="240dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
         android:id="@+id/logo"
         android:src="@drawable/uin"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
         tools:ignore="ContentDescription"/>
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-learning"
+        android:layout_below="@+id/logo"
+        android:gravity="center"
+        android:textSize="36dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/main_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UIN SUNAN KALIJAGA YOGYAKARTA"
+        android:layout_below="@+id/main_title"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:typeface="serif"/>
 
 </RelativeLayout>

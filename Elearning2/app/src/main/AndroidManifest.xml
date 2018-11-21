@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.ac.uin_suka.learning.elearning">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +21,15 @@
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TugasActivity" />
+        <activity
+            android:name=".CobaActivity"
+            android:label="@string/title_activity_coba" />
+        <activity
+            android:name=".DetailTugasActivity"
+            android:label="Detail Tugas" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
