@@ -10,12 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import static android.content.Context.MODE_PRIVATE;
 
 public class AkunFragment extends Fragment {
 
-    Button btnLogout;
+    LinearLayout linearLayout;
 
     @Nullable
     @Override
@@ -26,13 +27,16 @@ public class AkunFragment extends Fragment {
 
     public void onViewCreated(View view, Bundle savedInstanceState){
         SharePrefManager sharePrefManager = new SharePrefManager(getContext());
-        btnLogout = (Button)view.findViewById(R.id.btn_logout);
 
-        btnLogout.setOnClickListener((v)->{
-            sharePrefManager.saveSPBoolean(SharePrefManager.SP_SUDAH_LOGIN, false);
-            startActivity(new Intent(getActivity(), LoginActivity.class)
-                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
-            getActivity().finish();
+        linearLayout = (LinearLayout)view.findViewById(R.id.ll_logout);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sharePrefManager.saveSPBoolean(SharePrefManager.SP_SUDAH_LOGIN, false);
+                startActivity(new Intent(getActivity(), LoginActivity.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+                getActivity().finish();
+            }
         });
 
     }

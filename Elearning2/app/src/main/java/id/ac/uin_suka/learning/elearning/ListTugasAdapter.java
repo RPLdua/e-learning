@@ -1,10 +1,12 @@
 package id.ac.uin_suka.learning.elearning;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,7 +30,9 @@ public class ListTugasAdapter extends RecyclerView.Adapter<ListTugasAdapter.Cate
     @Override
     public CategoryViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemRow = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_tugas, parent, false);
-        return new CategoryViewHolder(itemRow);
+        CategoryViewHolder vHolder = new CategoryViewHolder(itemRow);
+
+        return vHolder;
     }
 
     @Override
@@ -42,6 +46,14 @@ public class ListTugasAdapter extends RecyclerView.Adapter<ListTugasAdapter.Cate
                 .override(55, 55)
                 .crossFade()
                 .into(holder.imgPhoto);
+        holder.btnDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tugasIntent = new Intent(context, DetailTugasActivity.class);
+                tugasIntent.putExtra(DetailTugasActivity.EXTRA_ID, "1");
+                context.startActivities(new Intent[]{tugasIntent});
+            }
+        });
     }
 
     @Override
@@ -53,9 +65,11 @@ public class ListTugasAdapter extends RecyclerView.Adapter<ListTugasAdapter.Cate
         TextView tvName;
         TextView tvRemarks;
         ImageView imgPhoto;
+        private Button btnDetail;
 
         public CategoryViewHolder(View itemView) {
             super(itemView);
+            btnDetail = (Button)itemView.findViewById(R.id.btn_detail_tugas);
             tvName = (TextView)itemView.findViewById(R.id.tv_nama_dosen);
             tvRemarks = (TextView)itemView.findViewById(R.id.tv_mata_kuliah);
             imgPhoto = (ImageView)itemView.findViewById(R.id.img_item_photo);
