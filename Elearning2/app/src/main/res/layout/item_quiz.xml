@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    card_view:cardBackgroundColor="red"
+    card_view:cardCornerRadius="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/nosoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. 1"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/soal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dalam menyusun suatu program,langkah pertama yang harus di lakkukan adalah : ?"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_toStartOf="@+id/radioGroup"
+                android:layout_toLeftOf="@+id/radioGroup"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Membuat program" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton"
+                android:layout_alignStart="@+id/radioButton"
+                android:layout_alignLeft="@+id/radioButton"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Membuat Algoritma" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignStart="@+id/radioButton2"
+                android:layout_alignLeft="@+id/radioButton2"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Membeli komputer" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Mempelajari program " />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/nosoal2.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. 2"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/soal2.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipe data pascal untuk karakter adalah?"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_toStartOf="@+id/radioGroup"
+                android:layout_toLeftOf="@+id/radioGroup"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Char" />
+
+            <RadioButton
+                android:id="@+id/radioButton2.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton"
+                android:layout_alignStart="@+id/radioButton"
+                android:layout_alignLeft="@+id/radioButton"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Boolean" />
+
+            <RadioButton
+                android:id="@+id/radioButton2.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignStart="@+id/radioButton2"
+                android:layout_alignLeft="@+id/radioButton2"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Integer" />
+
+            <RadioButton
+                android:id="@+id/radioButton2.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Byte " />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/nosoal3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. 3"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/soal3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sebuah prosedur langkah demi langkah yang pasti untuk menyelesaikan sebuah masalah disebut?"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <RadioButton
+                android:id="@+id/radioButton3.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_toStartOf="@+id/radioGroup"
+                android:layout_toLeftOf="@+id/radioGroup"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Proses" />
+
+            <RadioButton
+                android:id="@+id/radioButton3.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton"
+                android:layout_alignStart="@+id/radioButton"
+                android:layout_alignLeft="@+id/radioButton"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Program" />
+
+            <RadioButton
+                android:id="@+id/radioButton3.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignStart="@+id/radioButton2"
+                android:layout_alignLeft="@+id/radioButton2"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Algoritma" />
+
+            <RadioButton
+                android:id="@+id/radioButton3.4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Diagram" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/nosoal4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. 4"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/soal4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pseudocode yang di gunakan pada penulisan algoritma berupa ?"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <RadioButton
+                android:id="@+id/radioButton4.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_toStartOf="@+id/radioGroup"
+                android:layout_toLeftOf="@+id/radioGroup"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Bahassa Inggris" />
+
+            <RadioButton
+                android:id="@+id/radioButton4.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton"
+                android:layout_alignStart="@+id/radioButton"
+                android:layout_alignLeft="@+id/radioButton"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Bahasa Puitis" />
+
+            <RadioButton
+                android:id="@+id/radioButton4.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignStart="@+id/radioButton2"
+                android:layout_alignLeft="@+id/radioButton2"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Bahasa pemograman" />
+
+            <RadioButton
+                android:id="@+id/radioButton4.4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Bahasa Mesin" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/nosoal5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. 5"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/soal5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pada pembuatan program komputer, algoritma dibuat?"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <RadioButton
+                android:id="@+id/radioButton5.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_toStartOf="@+id/radioGroup"
+                android:layout_toLeftOf="@+id/radioGroup"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Sebelum pembuatan program" />
+
+            <RadioButton
+                android:id="@+id/radioButton5.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton"
+                android:layout_alignStart="@+id/radioButton"
+                android:layout_alignLeft="@+id/radioButton"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Pada saat program dibuat" />
+
+            <RadioButton
+                android:id="@+id/radioButton5.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignStart="@+id/radioButton2"
+                android:layout_alignLeft="@+id/radioButton2"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Sesudah pembuatan program" />
+
+            <RadioButton
+                android:id="@+id/radioButton5.4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onRadioButton"
+                android:text="Pada saat verifikasi program" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:layout_margin="20dp"
+            android:background="#63b9cc"
+            android:text="SUBMIT" />
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
