@@ -13,18 +13,24 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import id.ac.uin_suka.learning.elearning.model.SemuatugasItem;
 
 public class ListTugasAdapter extends RecyclerView.Adapter<ListTugasAdapter.CategoryViewHolder>{
     private Context context;
     private ArrayList<Tugas> listTugas;
+
+    List<SemuatugasItem> semuatugasItemList;
 
     public ArrayList<Tugas> getListTugas() { return listTugas; }
     public void setListTugas(ArrayList<Tugas> listTugas) {
         this.listTugas = listTugas;
     }
 
-    public ListTugasAdapter(Context context) {
+    public ListTugasAdapter(Context context, List<SemuatugasItem> tugasList) {
         this.context = context;
+        semuatugasItemList = tugasList;
     }
 
     @Override
@@ -37,33 +43,55 @@ public class ListTugasAdapter extends RecyclerView.Adapter<ListTugasAdapter.Cate
 
     @Override
     public void onBindViewHolder(CategoryViewHolder holder, int position) {
-
-        holder.tvName.setText(getListTugas().get(position).getName());
-        holder.tvRemarks.setText(getListTugas().get(position).getRemarks());
+        final SemuatugasItem semuatugasItem = semuatugasItemList.get(position);
+        holder.tvName.setText(semuatugasItem.getDosen());
+        holder.tvMakul.setText(semuatugasItem.getMakul());
+        holder.tvJudul.setText(semuatugasItem.getJudul());
+        holder.tvMulai.setText("Mulai: \t"+semuatugasItem.getMulai());
+        holder.tvSelesai.setText("Selesai: \t"+semuatugasItem.getSelesai());
 
         Glide.with(context)
-                .load(getListTugas().get(position).getPhoto())
+                .load(semuatugasItem.getFoto())
                 .override(55, 55)
                 .crossFade()
                 .into(holder.imgPhoto);
+
         holder.btnDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent tugasIntent = new Intent(context, DetailTugasActivity.class);
-                tugasIntent.putExtra(DetailTugasActivity.EXTRA_ID, "1");
+                tugasIntent.putExtra(DetailTugasActivity.EXTRA_ID, semuatugasItem.getId());
                 context.startActivities(new Intent[]{tugasIntent});
             }
         });
+
+//        holder.tvName.setText(getListTugas().get(position).getName());
+//        //holder.tvName.setText(coba);
+//        holder.tvRemarks.setText(getListTugas().get(position).getRemarks());
+//
+//        Glide.with(context)
+//                .load(getListTugas().get(position).getPhoto())
+//                .override(55, 55)
+//                .crossFade()
+//                .into(holder.imgPhoto);
+//        holder.btnDetail.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent tugasIntent = new Intent(context, DetailTugasActivity.class);
+//                tugasIntent.putExtra(DetailTugasActivity.EXTRA_ID, position);
+//                context.startActivities(new Intent[]{tugasIntent});
+//            }
+//        });
     }
 
     @Override
     public int getItemCount() {
-        return getListTugas().size();
+        return semuatugasItemList.size();
     }
 
     class CategoryViewHolder extends RecyclerView.ViewHolder{
-        TextView tvName;
-        TextView tvRemarks;
+        TextView tvName, tvMulai, tvSelesai, tvJudul;
+        TextView tvMakul;
         ImageView imgPhoto;
         private Button btnDetail;
 
@@ -71,7 +99,10 @@ public class ListTugasAdapter extends RecyclerView.Adapter<ListTugasAdapter.Cate
             super(itemView);
             btnDetail = (Button)itemView.findViewById(R.id.btn_detail_tugas);
             tvName = (TextView)itemView.findViewById(R.id.tv_nama_dosen);
-            tvRemarks = (TextView)itemView.findViewById(R.id.tv_mata_kuliah);
+            tvMulai = itemView.findViewById(R.id.tv_mulai);
+            tvSelesai = itemView.findViewById(R.id.tv_selesai);
+            tvJudul = itemView.findViewById(R.id.tv_judul);
+            tvMakul = (TextView)itemView.findViewById(R.id.tv_mata_kuliah);
             imgPhoto = (ImageView)itemView.findViewById(R.id.img_item_photo);
         }
     }

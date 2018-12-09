@@ -1,14 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="5dp"
     tools:context=".DetailTugasActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dt_foto_dosen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/uin"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/dt_foto_dosen"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="nama dosen"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama makul"/>
+    </LinearLayout>
     <TextView
         android:id="@+id/tv_judul_tugas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/dt_foto_dosen"
+        android:layout_marginTop="5dp"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:textStyle="bold"
         android:text="judul tugas"/>
+    <LinearLayout
+        android:id="@+id/dt_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tv_judul_tugas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/dt_tv_mulai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="mulai:"/>
+        <TextView
+            android:id="@+id/dt_tv_selesai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="selesai:"/>
+        <TextView
+            android:id="@+id/desk_tugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="merangkum materi ini itu ini itu"/>
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dt_frame_dwnld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:layout_below="@id/dt_frame">
+        <TextView
+            android:id="@+id/tv_filetugas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"
+            android:text="Tugas_rpl.pdf"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="download"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dt_frame_dwnld"
+        android:layout_margin="5dp"
+        android:background="@drawable/border">
+        <LinearLayout
+            android:id="@+id/hanyaini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_namafile_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:layout_gravity="center"
+                android:text="ini nama file lhoo.pdf"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"></View>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Pilih File"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hanyaini"
+            android:text="upload tugas"/>
+    </RelativeLayout>
+
+</RelativeLayout>

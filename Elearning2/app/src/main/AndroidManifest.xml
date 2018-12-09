@@ -22,10 +22,6 @@
             android:name=".Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TugasActivity" />
-        <activity
-            android:name=".CobaActivity"
-            android:label="@string/title_activity_coba" />
         <activity
             android:name=".DetailTugasActivity"
             android:label="Detail Tugas" />

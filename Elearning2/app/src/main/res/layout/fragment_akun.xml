@@ -17,21 +17,26 @@
             android:src="@drawable/uin"
             android:layout_gravity="center"/>
         <TextView
-            android:layout_marginTop="50dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Muhammad Akid Musyafa"
+            android:textSize="24sp"
             android:textColor="@android:color/white"
             android:textAlignment="center"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
             android:text="16650035"
             android:textColor="@android:color/white"
             android:textAlignment="center"/>
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:orientation="horizontal">
@@ -44,6 +49,7 @@
                 android:textSize="30sp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:textColor="@color/colorPrimaryDark"
                 android:text="Tahun Ajaran"
                 android:gravity="center"/>
         </LinearLayout>
@@ -62,6 +68,7 @@
                 android:textSize="30sp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:textColor="@color/colorPrimaryDark"
                 android:text="Logout"
                 android:gravity="center"/>
         </LinearLayout>
