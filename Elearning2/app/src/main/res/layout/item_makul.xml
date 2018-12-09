@@ -6,16 +6,14 @@ android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentType="true"
-        android:layout_alignParensStart="true">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/pbo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="18"
+            android:textSize="18dp"
             android:text="PEMROGRAMAN BERORIENTASI OBJEK"/>
 
         <TextView
@@ -23,7 +21,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="Nurrochman"/>
 
         <TextView
@@ -31,7 +29,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="45 peserta"/>
 
         <TextView
@@ -39,7 +37,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="18"
+            android:textSize="18dp"
             android:text="KOMPUTER DAN MASYARAKAT"/>
 
         <TextView
@@ -47,7 +45,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="Aulia Faqih"/>
 
         <TextView
@@ -55,7 +53,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="34 peserta"/>
 
         <TextView
@@ -63,7 +61,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="18"
+            android:textSize="18dp"
             android:text="JARINGAN KOMPUTER"/>
 
         <TextView
@@ -71,7 +69,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="Bambang Sugiantoro"/>
 
         <TextView
@@ -79,7 +77,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="30 peserta"/>
 
         <TextView
@@ -87,7 +85,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="18"
+            android:textSize="18dp"
             android:text="REKAYASA PERANGKAT LUNAK"/>
 
         <TextView
@@ -95,7 +93,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="Taufiq Nurruzzaman"/>
 
         <TextView
@@ -103,7 +101,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="48 peserta"/>
 
         <TextView
@@ -111,7 +109,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="18"
+            android:textSize="18dp"
             android:text="SISTEM INFORMASI MANAJEMEN"/>
 
         <TextView
@@ -119,7 +117,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="Agus Mulyanto"/>
 
         <TextView
@@ -127,7 +125,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="30 peserta"/>
 
         <TextView
@@ -135,7 +133,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="18"
+            android:textSize="18dp"
             android:text="MANAJEMEN RISIKO"/>
 
         <TextView
@@ -143,7 +141,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="Agus Mulyanto"/>
 
         <TextView
@@ -151,7 +149,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="24 peserta"/>
 
         <TextView
@@ -159,7 +157,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="18"
+            android:textSize="18dp"
             android:text="KECERDASAN BUATAN"/>
 
         <TextView
@@ -167,7 +165,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="Rahmat Hidayat"/>
 
         <TextView
@@ -175,7 +173,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="15"
+            android:textSize="15dp"
             android:text="42 peserta"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
