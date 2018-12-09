@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentType="true"
+        android:layout_alignParensStart="true">
+
+        <TextView
+            android:id="@+id/pbo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18"
+            android:text="PEMROGRAMAN BERORIENTASI OBJEK"/>
+
+        <TextView
+            android:id="@+id/pbodos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="Nurrochman"/>
+
+        <TextView
+            android:id="@+id/pbopes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="45 peserta"/>
+
+        <TextView
+            android:id="@+id/kommas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18"
+            android:text="KOMPUTER DAN MASYARAKAT"/>
+
+        <TextView
+            android:id="@+id/kommasdos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="Aulia Faqih"/>
+
+        <TextView
+            android:id="@+id/kommaspes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="34 peserta"/>
+
+        <TextView
+            android:id="@+id/jarkom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18"
+            android:text="JARINGAN KOMPUTER"/>
+
+        <TextView
+            android:id="@+id/jarkomdos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="Bambang Sugiantoro"/>
+
+        <TextView
+            android:id="@+id/jarkompes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="30 peserta"/>
+
+        <TextView
+            android:id="@+id/rpl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18"
+            android:text="REKAYASA PERANGKAT LUNAK"/>
+
+        <TextView
+            android:id="@+id/rpldos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="Taufiq Nurruzzaman"/>
+
+        <TextView
+            android:id="@+id/rplpes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="48 peserta"/>
+
+        <TextView
+            android:id="@+id/sim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18"
+            android:text="SISTEM INFORMASI MANAJEMEN"/>
+
+        <TextView
+            android:id="@+id/simdos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="Agus Mulyanto"/>
+
+        <TextView
+            android:id="@+id/simpes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="30 peserta"/>
+
+        <TextView
+            android:id="@+id/manris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18"
+            android:text="MANAJEMEN RISIKO"/>
+
+        <TextView
+            android:id="@+id/manrisdos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="Agus Mulyanto"/>
+
+        <TextView
+            android:id="@+id/manrispes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="24 peserta"/>
+
+        <TextView
+            android:id="@+id/kb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18"
+            android:text="KECERDASAN BUATAN"/>
+
+        <TextView
+            android:id="@+id/kbdos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="Rahmat Hidayat"/>
+
+        <TextView
+            android:id="@+id/kbpes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15"
+            android:text="42 peserta"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
