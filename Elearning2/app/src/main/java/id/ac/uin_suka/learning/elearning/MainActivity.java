@@ -1,11 +1,9 @@
 package id.ac.uin_suka.learning.elearning;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.Window;
-import android.widget.TextView;
+        import android.os.Handler;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,15 +11,12 @@ public class MainActivity extends AppCompatActivity {
     //private Button btnMoveActivity;
     private int waktu_loading=3000;
 
-
     //4000=4 detik
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-
 
         //btnMoveActivity = (Button)findViewById(R.id.btn_move);
         //btnMoveActivity.setOnClickListener(this);
