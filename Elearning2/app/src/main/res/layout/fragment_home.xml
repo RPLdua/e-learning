@@ -14,7 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background = "#fff"
-        android:hint="status..."/>
+        android:hint="status..."
+        android:inputType="textMultiLine"
+        android:textAlignment=""
+        />
     <LinearLayout
         android:id="@+id/btn_status_mhs"
         android:layout_width="wrap_content"
@@ -26,18 +29,23 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
             android:textColor="@color/colorPrimary"
-            android:text="post"/>
+            android:text="post"
+            android:layout_marginStart="10dp"/>
         <Button
+            android android:id="@+id/attachFiles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimary"
-            android:text="attach file"/>
+            android:text="attach file"
+            android:layout_marginStart="8dp"/>
     </LinearLayout>
-    <TextView
+    <android.support.v7.widget.RecyclerView
         android:layout_below="@+id/btn_status_mhs"
+        android:id="@+id/isiItemStatus"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="home"/>
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"/>
 
 
 
