@@ -20,7 +20,7 @@
             android:layout_weight="1"
             android:text="Tahun Ajaran"
             android:textStyle="bold"
-            android:textSize="20sp"
+            android:textSize="35sp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"/>
 
@@ -29,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2014/2015"
+            android:textSize="25sp"
         android:layout_marginBottom="4dp"
        />
 
@@ -37,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2015/2016"
+        android:textSize="25sp"
         android:layout_marginBottom="4dp"
         />
 
@@ -45,6 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2016/2017"
+        android:textSize="25sp"
         android:layout_marginBottom="4dp"
        />
 
@@ -53,13 +56,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2017/2018"
+        android:textSize="25sp"
         android:layout_marginBottom="4dp" />
 
     <RadioButton
         android:id="@+id/radioButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2018/2019" />
+        android:text="2018/2019"
+        android:textSize="25sp"/>
     </RadioGroup>
 
     <RadioGroup
@@ -77,7 +82,7 @@
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:text="Semester"
-            android:textSize="20sp"
+            android:textSize="35sp"
             android:textStyle="bold" />
 
         <RadioButton
@@ -85,6 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
+            android:textSize="25sp"
             android:text="Ganjil" />
 
         <RadioButton
@@ -92,8 +98,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
+            android:textSize="25sp"
             android:text="Genap" />
 
     </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10sp"
+        android:text="Go" />
 
 </RelativeLayout>
