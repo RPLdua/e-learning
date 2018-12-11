@@ -10,6 +10,10 @@ public class SharePrefManager {
     public static final String SP_EMAIL = "spEmail";
 
     public static final String SP_SUDAH_LOGIN = "spSudahLogin";
+    public static final String SP_JUMLAH_TUGAS = "spJumlahTugas";
+    public static final String SP_JUMLAH_STATUS = "spJumlahStatus";
+    public static final String SP_TAHUN_AJARAN = "spTahunAjaran";
+    public static final String SP_SEMESTER = "spSemester";
 
     SharedPreferences sp;
     SharedPreferences.Editor spEditor;
@@ -45,4 +49,10 @@ public class SharePrefManager {
     public Boolean getSPSudahLogin(){
         return sp.getBoolean(SP_SUDAH_LOGIN, false);
     }
+
+    public Integer getJumlahTugas(){return sp.getInt(SP_JUMLAH_STATUS, 0);}
+
+    public Integer getTahunAjaran() {return sp.getInt(SP_TAHUN_AJARAN, 0);}
+
+    public String getSpSemester() {return sp.getString(SP_SEMESTER, "");}
 }

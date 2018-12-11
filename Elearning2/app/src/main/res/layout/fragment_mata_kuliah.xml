@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,11 +7,11 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
+        android:id="@+id/tv_top_makul"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_alignParentType="true"
-        android:layout_alignParensStart="true">
+        android:background="@android:color/darker_gray">
 
         <TextView
             android:layout_width="match_parent"
@@ -20,7 +20,6 @@
             android:gravity="center"
             android:textAlignment="center" />
 
--->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,20 +31,9 @@
             android:text="2018/2019"
             android:textAlignment="center" />
    </LinearLayout>
-    <RelativeLayout
-        android:layout_marginTop="70dp"
-        android:layout_width="300dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center">
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_category"
+        android:id="@+id/rv_makul"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    </RelativeLayout>
-
-
-
-
-
-
-</FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_top_makul"/>
+</RelativeLayout>

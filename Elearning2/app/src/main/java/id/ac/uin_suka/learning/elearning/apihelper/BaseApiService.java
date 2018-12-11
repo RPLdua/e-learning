@@ -1,6 +1,8 @@
 package id.ac.uin_suka.learning.elearning.apihelper;
 
 import id.ac.uin_suka.learning.elearning.model.ResponseDetailTugas;
+import id.ac.uin_suka.learning.elearning.model.ResponseMakul;
+import id.ac.uin_suka.learning.elearning.model.ResponseStatus;
 import id.ac.uin_suka.learning.elearning.model.ResponseTugas;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -9,6 +11,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface BaseApiService {
 
@@ -17,6 +20,15 @@ public interface BaseApiService {
 
     @GET("detailtugas/{id}")
     Call<ResponseDetailTugas> getDetailTugas(@Path("id") String id);
+
+    @GET("status/{nim}")
+    Call<ResponseStatus> getStatus(@Path("nim") String nim);
+
+    @GET("makul")
+    Call<ResponseMakul> getMakul(@Query("nim") String nim,
+                                 @Query("tahun") String tahun,
+                                 @Query("sem") String sem);
+
 
     // Fungsi ini untuk memanggil API http://musya11.000webhostapp.com/apimhs/login.php
     @FormUrlEncoded

@@ -103,7 +103,8 @@
         <LinearLayout
             android:id="@+id/hanyaini"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <TextView
                 android:id="@+id/tv_namafile_upload"
                 android:layout_width="wrap_content"
@@ -114,13 +115,14 @@
                 android:layout_gravity="center"
                 android:text="ini nama file lhoo.pdf"/>
             <View
+                android:id="@+id/view_upload"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"></View>
             <Button
+                android:id="@+id/bt__pilih_file"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:text="Pilih File"/>
         </LinearLayout>
 

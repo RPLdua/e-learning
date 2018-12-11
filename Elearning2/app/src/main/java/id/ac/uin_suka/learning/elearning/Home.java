@@ -1,21 +1,12 @@
 package id.ac.uin_suka.learning.elearning;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 
 public class Home extends AppCompatActivity
@@ -26,18 +17,21 @@ public class Home extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
+        //Manually displaying the first fragment - one time only
+        //loadFragment(new HomeFragment());
 
         BottomNavigationView botnav = findViewById(R.id.navigation);
         botnav.setOnNavigationItemSelectedListener(this);
 
-        //loadFragment(new HomeFragment());
-        //Manually displaying the first fragment - one time only
+        Fragment fragment = new HomeFragment();
+
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fl_container, HomeFragment.newInstance());
+        transaction.replace(R.id.fl_container, fragment);
         transaction.commit();
 
     }
+
+
 
     // method untuk load fragment yang sesuai
     private boolean loadFragment(Fragment fragment) {
@@ -62,18 +56,12 @@ public class Home extends AppCompatActivity
                 break;
             case R.id.nav_makul:
                 fragment = new MataKuliahFragment();
-                //Intent intent = new Intent(Home.this, CobaActivity.class);
-                //startActivity(intent);
                 break;
             case R.id.nav_tugas:
                 fragment = new TugasActivity();
-                //Intent intent2 = new Intent(Home.this, TugasActivity.class);
-                //startActivity(intent2);
                 break;
             case R.id.nav_akun:
                 fragment = new AkunFragment();
-                //Intent intent3 = new Intent(Home.this, CobaActivity.class);
-                //startActivity(intent3);
                 break;
         }
         return loadFragment(fragment);

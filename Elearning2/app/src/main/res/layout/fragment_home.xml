@@ -33,13 +33,10 @@
             android:textColor="@color/colorPrimary"
             android:text="attach file"/>
     </LinearLayout>
-    <TextView
+    <android.support.v7.widget.RecyclerView
         android:layout_below="@+id/btn_status_mhs"
+        android:id="@+id/rv_status"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="home"/>
-
-
-
+        android:layout_height="match_parent"/>
 </RelativeLayout>
 

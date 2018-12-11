@@ -48,6 +48,12 @@ public class TugasActivity extends Fragment {
         rvCategory.setLayoutManager(mLayoutManager);
         rvCategory.setItemAnimator(new DefaultItemAnimator());
 
+//        if(tugasAdapter.getItemCount() == tugasAdapter.getLocalCount()){
+//            Toast.makeText(getActivity(), "Sama", Toast.LENGTH_SHORT).show();
+//        } else {
+//            tugasAdapter.setListTugas(List<SemuatugasItem> semuatugasItemList);
+//        }
+
         getResultListTugas();
 
 //        rvCategory.setLayoutManager(new LinearLayoutManager(getActivity()));

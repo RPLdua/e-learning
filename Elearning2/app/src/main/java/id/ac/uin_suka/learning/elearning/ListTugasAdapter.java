@@ -65,28 +65,15 @@ public class ListTugasAdapter extends RecyclerView.Adapter<ListTugasAdapter.Cate
             }
         });
 
-//        holder.tvName.setText(getListTugas().get(position).getName());
-//        //holder.tvName.setText(coba);
-//        holder.tvRemarks.setText(getListTugas().get(position).getRemarks());
-//
-//        Glide.with(context)
-//                .load(getListTugas().get(position).getPhoto())
-//                .override(55, 55)
-//                .crossFade()
-//                .into(holder.imgPhoto);
-//        holder.btnDetail.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent tugasIntent = new Intent(context, DetailTugasActivity.class);
-//                tugasIntent.putExtra(DetailTugasActivity.EXTRA_ID, position);
-//                context.startActivities(new Intent[]{tugasIntent});
-//            }
-//        });
     }
 
     @Override
     public int getItemCount() {
         return semuatugasItemList.size();
+    }
+
+    public int getLocalCount() {
+        return listTugas.size();
     }
 
     class CategoryViewHolder extends RecyclerView.ViewHolder{
