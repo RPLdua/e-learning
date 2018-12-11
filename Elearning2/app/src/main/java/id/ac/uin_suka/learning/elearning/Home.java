@@ -3,9 +3,15 @@ package id.ac.uin_suka.learning.elearning;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+<<<<<<< HEAD
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+=======
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.design.widget.NavigationView;
+>>>>>>> e13b1ce5c274e8e4bed350e70ebd6afba510b2a7
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
