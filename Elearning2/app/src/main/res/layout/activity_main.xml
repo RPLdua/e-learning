@@ -4,7 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/bguin"
+
     android:gravity="center"
     tools:context=".MainActivity">
 
@@ -23,7 +24,7 @@
         android:layout_below="@+id/logo"
         android:gravity="center"
         android:textSize="36dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#fff"
         android:textStyle="bold"/>
     <TextView
         android:id="@+id/main_title2"
@@ -33,7 +34,7 @@
         android:layout_below="@+id/main_title"
         android:gravity="center"
         android:textSize="30dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#fff"
         android:typeface="serif"/>
 
 </RelativeLayout>
