@@ -2,12 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.ac.uin_suka.learning.elearning">
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET" />
-=======
-    <uses-permission android:name="android.permission.INTERNET" />e="@style/AppTheme.NoActionBar
->>>>>>> e13b1ce5c274e8e4bed350e70ebd6afba510b2a7
 
     <application
         android:allowBackup="true"
@@ -15,14 +11,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".MainActivity">
-=======
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:them">
->>>>>>> e13b1ce5c274e8e4bed350e70ebd6afba510b2a7
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,12 +39,11 @@
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
-             />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DetailTugasActivity"
             android:label="Detail Tugas" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".KomentarActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

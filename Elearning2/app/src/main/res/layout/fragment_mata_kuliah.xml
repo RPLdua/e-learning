@@ -9,14 +9,9 @@
     <LinearLayout
         android:id="@+id/tv_top_makul"
         android:layout_width="match_parent"
-<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@android:color/darker_gray">
-=======
-        android:layout_height="match_parent"
-        android:orientation="vertical">
->>>>>>> e13b1ce5c274e8e4bed350e70ebd6afba510b2a7
 
         <TextView
             android:layout_width="match_parent"
