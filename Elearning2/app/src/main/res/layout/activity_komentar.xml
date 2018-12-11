@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KomentarActivity">
+
+    <RelativeLayout
+        android:id="@+id/statusKomen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/photoMhsK1"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namaDanStatus"
+            android:layout_toRightOf="@id/photoMhsK1">
+
+            <TextView
+                android:layout_toRightOf="@id/photoMhsK1"
+                android:id="@+id/namaStatusK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="Nama Lengkap"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginLeft="4dp" />
+
+            <TextView
+                android:layout_toRightOf="@id/komentarNama"
+                android:id="@+id/isiStatusK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Isi Status"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginLeft="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusTglK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:layout_below="@id/namaDanStatus"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_toRightOf="@id/photoMhsK1"
+            android:text="8 Jam yang lalu." />
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#808080"
+        android:id="@+id/garisStatus"
+        android:layout_below="@id/statusKomen"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_category"
+        android:layout_below="@id/garisStatus"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#808080"
+        android:id="@+id/garisStatus2"
+        android:layout_alignTop="@+id/tulisKomen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tulisKomen"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_marginTop="8dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/photoMhsK2"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/status_mhs"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Tulis Komenmu"
+            android:background="@android:color/transparent"
+            android:textSize="15sp"
+            android:textColorHint="#808080"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:text="kirim"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -47,6 +47,7 @@ public class MataKuliahFragment extends Fragment {
 //        return inflater.inflate(R.layout.fragment_mata_kuliah, container, false);
 
         View view = inflater.inflate(R.layout.fragment_mata_kuliah, container, false);
+        getActivity().setTitle("Mata Kuliah");
         rview = view.findViewById(R.id.rv_makul);
 
         mContext = this;

@@ -38,6 +38,7 @@ public class TugasActivity extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_tugas, container, false);
+        getActivity().setTitle("Tugas");
         rvCategory = (RecyclerView) view.findViewById(R.id.rv_category);
 
         mContext =this;

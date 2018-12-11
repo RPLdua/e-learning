@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view3"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/photoMhsK"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namaDanKomen"
+            android:layout_toRightOf="@id/photoMhsK">
+            <TextView
+                android:layout_toRightOf="@id/photoMhsK"
+                android:id="@+id/komentarNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="Nama Lengkap"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginLeft="4dp" />
+
+            <TextView
+                android:layout_toRightOf="@id/komentarNama"
+                android:id="@+id/isiKomen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Isi Komen"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginLeft="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/komenTgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:layout_below="@id/namaDanKomen"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_toRightOf="@id/photoMhsK"
+            android:text="8 Jam yang lalu." />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
