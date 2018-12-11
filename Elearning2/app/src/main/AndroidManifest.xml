@@ -44,7 +44,8 @@
             android:label="Detail Tugas" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".KomentarActivity" />
-        <activity android:name=".TahunAjaranActivity"></activity>
+        <activity android:name=".TahunAjaranActivity" />
+        <activity android:name=".ActivityTahunAjaran"></activity>
     </application>
 
 </manifest>

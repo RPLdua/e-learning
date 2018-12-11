@@ -16,7 +16,8 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class AkunFragment extends Fragment {
 
-    LinearLayout linearLayout;
+    LinearLayout linearLayout, tahunajaran;
+
 
     @Nullable
     @Override
@@ -37,6 +38,14 @@ public class AkunFragment extends Fragment {
                 startActivity(new Intent(getActivity(), LoginActivity.class)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
                 getActivity().finish();
+            }
+        });
+
+        tahunajaran = (LinearLayout)view.findViewById(R.id.TA);
+        tahunajaran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), ActivityTahunAjaran.class));
             }
         });
 
