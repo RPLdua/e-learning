@@ -6,7 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -32,11 +34,18 @@ public class MakulAdapter extends RecyclerView.Adapter<MakulAdapter.MViewHolder>
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MViewHolder mViewHolder, int i) {
-        final MakulItem makulItem = makulItems.get(i);
+    public void onBindViewHolder(@NonNull MViewHolder mViewHolder, int pos) {
+        final MakulItem makulItem = makulItems.get(pos);
         mViewHolder.tvDosen.setText(makulItem.getNim());
         mViewHolder.tvMakul.setText(makulItem.getMakul());
         mViewHolder.tvMhs.setText(makulItem.getId());
+
+        mViewHolder.btnDtl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Maaf! Belum tersedia.", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -47,12 +56,14 @@ public class MakulAdapter extends RecyclerView.Adapter<MakulAdapter.MViewHolder>
 
     public static class MViewHolder extends RecyclerView.ViewHolder{
         TextView tvDosen, tvMakul, tvMhs;
+        Button btnDtl;
 
         public MViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvDosen = itemView.findViewById(R.id.tv_makul_dosesn);
-            tvMakul = itemView.findViewById(R.id.tv_makul);
-            tvMhs = itemView.findViewById(R.id.tv_makul_mhs);
+            tvDosen = itemView.findViewById(R.id.tv_makul_dosenX);
+            tvMakul = itemView.findViewById(R.id.tv_makul_makul);
+            tvMhs = itemView.findViewById(R.id.tv_makul_mhsX);
+            btnDtl = itemView.findViewById(R.id.ButtonDtlMakul);
         }
     }
 }

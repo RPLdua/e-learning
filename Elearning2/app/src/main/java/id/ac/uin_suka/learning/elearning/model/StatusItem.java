@@ -6,6 +6,9 @@ public class StatusItem {
     @SerializedName("id")
     private String id;
 
+    @SerializedName("nama")
+    private String nama;
+
     @SerializedName("like")
     private String like;
 
@@ -26,6 +29,10 @@ public class StatusItem {
 
     public void setId(String id){this.id = id;}
     public String getId() {return id;}
+
+
+    public void setNama(String nama){this.nama= nama;}
+    public String getNama() {return nama;}
 
     public void setLike(String like) {this.like = like;}
     public String getLike() {return like;}
@@ -54,6 +61,7 @@ public class StatusItem {
                 "status{"+
                         "id = '"+id+'\''+
                         "nim='"+nim+'\''+
+                        "nama'"+nama+'\''+
                         "isi_status='"+isi_status+'\''+
                         "like ='"+like+'\''+
                         "tgl='" +tgl+'\''+

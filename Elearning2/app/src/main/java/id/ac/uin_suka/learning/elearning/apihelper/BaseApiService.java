@@ -1,6 +1,7 @@
 package id.ac.uin_suka.learning.elearning.apihelper;
 
 import id.ac.uin_suka.learning.elearning.model.ResponseDetailTugas;
+import id.ac.uin_suka.learning.elearning.model.ResponseKomen;
 import id.ac.uin_suka.learning.elearning.model.ResponseMakul;
 import id.ac.uin_suka.learning.elearning.model.ResponseStatus;
 import id.ac.uin_suka.learning.elearning.model.ResponseTugas;
@@ -28,6 +29,9 @@ public interface BaseApiService {
     Call<ResponseMakul> getMakul(@Query("nim") String nim,
                                  @Query("tahun") String tahun,
                                  @Query("sem") String sem);
+
+    @GET("komentar/{id}")
+    Call<ResponseKomen> getKomen(@Path("id") String id);
 
 
     // Fungsi ini untuk memanggil API http://musya11.000webhostapp.com/apimhs/login.php

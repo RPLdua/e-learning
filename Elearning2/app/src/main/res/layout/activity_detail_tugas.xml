@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nama makul"/>
+            android:text="nama listmakul"/>
     </LinearLayout>
     <TextView
         android:id="@+id/tv_judul_tugas"
@@ -83,7 +83,7 @@
             android:textSize="18sp"
             android:textStyle="bold|italic"
             android:layout_gravity="center"
-            android:text="Tugas_rpl.pdf"/>
+            android:text="Tugas.pdf"/>
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -113,7 +113,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold|italic"
                 android:layout_gravity="center"
-                android:text="ini nama file lhoo.pdf"/>
+                android:text="Pilihh file untuk di upload"/>
             <View
                 android:id="@+id/view_upload"
                 android:layout_width="0dp"

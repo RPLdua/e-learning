@@ -71,7 +71,7 @@
         android:id="@+id/radioGroup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/radioGroup1"
+        android:layout_below="@+id/radioGroup1"
         android:padding="12dp">
 
         <TextView
@@ -110,6 +110,8 @@
         android:layout_below="@+id/radioGroup2"
         android:layout_alignParentStart="true"
         android:layout_marginStart="10sp"
-        android:text="Go" />
+        android:text="Go"
+        android:layout_marginLeft="10sp"
+        android:layout_alignParentLeft="true" />
 
 </RelativeLayout>

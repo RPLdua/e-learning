@@ -1,6 +1,7 @@
 package id.ac.uin_suka.learning.elearning.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import id.ac.uin_suka.learning.elearning.KomentarActivity;
 import id.ac.uin_suka.learning.elearning.R;
 import id.ac.uin_suka.learning.elearning.model.StatusItem;
 
@@ -36,12 +38,23 @@ public class StatusAdapter extends RecyclerView.Adapter<StatusAdapter.MyViewHold
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int pos) {
         final StatusItem statusItem = listStatus.get(pos);
-        holder.tvNama.setText(statusItem.getId());
+        holder.tvNama.setText(statusItem.getNama());
         holder.tvNim.setText(statusItem.getNim());
         holder.tvTgl.setText(statusItem.getTgl());
         holder.tvStatus.setText(statusItem.getIsiStatus());
-        holder.btnLike.setText(statusItem.getLike());
+        holder.btnLike.setText(statusItem.getLike()+" Like");
+        holder.btnKomen.setText(statusItem.getLike()+" Komentar");
 
+        holder.btnKomen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent komenIntent = new Intent(context, KomentarActivity.class);
+                komenIntent.putExtra(KomentarActivity.EXTRA_ID, statusItem.getId());
+                komenIntent.putExtra(KomentarActivity.EXTRA_STATUS, statusItem.getIsiStatus());
+                komenIntent.putExtra(KomentarActivity.EXTRA_TGL, statusItem.getTgl());
+                context.startActivities(new Intent[]{komenIntent});
+            }
+        });
     }
 
     @Override

@@ -4,8 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MataKuliahFragment">
-
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:id="@+id/tv_top_makul"
         android:layout_width="match_parent"
@@ -26,13 +24,14 @@
             android:text="TAHUN AJARAN"
             android:gravity="center" />
         <TextView
+            android:id="@+id/ta_makul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2018/2019"
             android:textAlignment="center" />
    </LinearLayout>
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_makul"
+        android:id="@+id/rv_makul_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tv_top_makul"/>

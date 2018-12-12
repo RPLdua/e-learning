@@ -10,7 +10,7 @@ public class MakulItem {
     private String nim;
 
     @SerializedName("makul")
-    private String makul;
+    private String  makul;
 
     @SerializedName("semester")
     private String semester;
@@ -24,7 +24,7 @@ public class MakulItem {
     public void setNim(String nim){this.nim = nim;}
     public String getNim() {return nim;}
 
-    public void setMakul(String makul){this.id = makul;}
+    public void setMakul(String makul){this.makul = makul;}
     public String getMakul() {return makul;}
 
     public void setSemester(String semester){this.semester = semester;}

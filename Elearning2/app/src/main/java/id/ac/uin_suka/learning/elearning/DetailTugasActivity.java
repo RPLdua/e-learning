@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ipaulpro.afilechooser.utils.FileUtils;
 
@@ -17,7 +18,11 @@ import java.util.List;
 
 import id.ac.uin_suka.learning.elearning.apihelper.BaseApiService;
 import id.ac.uin_suka.learning.elearning.apihelper.UtilsApi;
+import id.ac.uin_suka.learning.elearning.model.ResponseDetailTugas;
 import id.ac.uin_suka.learning.elearning.model.TugasItem;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class DetailTugasActivity extends AppCompatActivity implements View.OnClickListener {
     public  static  String EXTRA_ID = "extra_id";
@@ -50,27 +55,27 @@ public class DetailTugasActivity extends AppCompatActivity implements View.OnCli
         upView = findViewById(R.id.view_upload);
         btnPilihFIle.setOnClickListener(this);
 
-//        mApiService.getDetailTugas(id)
-//                .enqueue(new Callback<ResponseDetailTugas>() {
-//                    @Override
-//                    public void onResponse(Call<ResponseDetailTugas> call, Response<ResponseDetailTugas> response) {
-//                        if (response.isSuccessful()){
-//                            final List<TugasItem> tugasItems = response.body().getDetailtugas();
-//
-//                            tvJudul.setText(tugasItems.get(0).getJudul());
-//                            tvDetail.setText(tugasItems.get(0).getIsi());
-//                            tvMulai.setText("Mulai: \t\t"+tugasItems.get(0).getMulai());
-//                            tvSelesai.setText("Selesai \t: "+tugasItems.get(0).getSelesai());
-//                        } else {
-//                            Toast.makeText(DetailTugasActivity.this, "Gagal mengambil data", Toast.LENGTH_SHORT).show();
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onFailure(Call<ResponseDetailTugas> call, Throwable t) {
-//                        Toast.makeText(DetailTugasActivity.this, "Koneksi bermasalah", Toast.LENGTH_SHORT).show();
-//                    }
-//                });
+        mApiService.getDetailTugas(id)
+                .enqueue(new Callback<ResponseDetailTugas>() {
+                    @Override
+                    public void onResponse(Call<ResponseDetailTugas> call, Response<ResponseDetailTugas> response) {
+                        if (response.isSuccessful()){
+                            final List<TugasItem> tugasItems = response.body().getDetailtugas();
+
+                            tvJudul.setText(tugasItems.get(0).getJudul());
+                            tvDetail.setText(tugasItems.get(0).getIsi());
+                            tvMulai.setText("Mulai: \t\t"+tugasItems.get(0).getMulai());
+                            tvSelesai.setText("Selesai \t: "+tugasItems.get(0).getSelesai());
+                        } else {
+                            Toast.makeText(DetailTugasActivity.this, "Gagal mengambil data", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseDetailTugas> call, Throwable t) {
+                        Toast.makeText(DetailTugasActivity.this, "Koneksi bermasalah", Toast.LENGTH_SHORT).show();
+                    }
+                });
 
     }
 

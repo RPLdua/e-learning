@@ -48,7 +48,7 @@ public class MataKuliahFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_mata_kuliah, container, false);
         getActivity().setTitle("Mata Kuliah");
-        rview = view.findViewById(R.id.rv_makul);
+        rview = view.findViewById(R.id.rv_makul_list);
 
         mContext = this;
         mApiService = UtilsApi.getAPIService();
@@ -82,10 +82,16 @@ public class MataKuliahFragment extends Fragment {
             @Override
             public void onResponse(Call<ResponseMakul> call, Response<ResponseMakul> response) {
                 if (response.isSuccessful()){
-                    //bar.setVisibility(View.GONE);
-                    final List<MakulItem> makulItems = response.body().getMakul();
-                    rview.setAdapter(new MakulAdapter(getActivity(), makulItems));
-                    makulAdapter.notifyDataSetChanged();
+                    if (response.body() == null){
+                        Toast.makeText(getActivity(), "ini null", Toast.LENGTH_SHORT).show();
+                    } else {
+                        //bar.setVisibility(View.GONE);
+                        Toast.makeText(getActivity(), "mengambil data", Toast.LENGTH_SHORT).show();
+                        final List<MakulItem> makulItems = response.body().getListmakul();
+                        rview.setAdapter(new MakulAdapter(getActivity(), makulItems));
+                        makulAdapter.notifyDataSetChanged();
+                    }
+
                 } else {
                     //bar.setVisibility(View.GONE);
                     Toast.makeText(getActivity(), "Tidak sukses mengambil data", Toast.LENGTH_SHORT).show();

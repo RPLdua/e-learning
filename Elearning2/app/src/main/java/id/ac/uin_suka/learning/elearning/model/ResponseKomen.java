@@ -4,9 +4,9 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class ResponseMakul {
-    @SerializedName("listmakul")
-    private List<MakulItem> listmakul;
+public class ResponseKomen {
+    @SerializedName("komen")
+    private List<KomenItem> komen;
 
     @SerializedName("error")
     private boolean error;
@@ -14,12 +14,12 @@ public class ResponseMakul {
     @SerializedName("message")
     private String message;
 
-    public void setListmakul(List<MakulItem> listmakul) {
-        this.listmakul = listmakul;
+    public void setKomen(List<KomenItem> komen) {
+        this.komen= komen;
     }
 
-    public List<MakulItem> getListmakul() {
-        return listmakul;
+    public List<KomenItem> getKomen() {
+        return komen;
     }
 
     public void setError(boolean error) {
@@ -41,8 +41,8 @@ public class ResponseMakul {
     @Override
     public String toString(){
         return
-                "ResponseMakul{"+
-                        "listmakul='"+ listmakul +'\''+
+                "ResponseKomen{"+
+                        "komen ='"+komen+'\''+
                         ",error = '"+error+'\''+
                         ",message='"+message+'\''+
                         "}";

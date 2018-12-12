@@ -10,12 +10,12 @@
         android:id="@+id/statusKomen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="8sp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:src="@mipmap/ic_launcher_round"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
             android:id="@+id/photoMhsK1"
             android:layout_marginBottom="4dp"/>
 
@@ -69,7 +69,7 @@
     <View
         android:layout_marginTop="1dp"
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
+        android:layout_height="0.5sp"
         android:background="#808080"
         android:id="@+id/garisStatus"
         android:layout_below="@id/statusKomen"/>
@@ -77,14 +77,14 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_category"
         android:layout_below="@id/garisStatus"
-        android:padding="8dp"
+        android:padding="8sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <View
         android:layout_marginTop="1dp"
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
+        android:layout_height="0.5sp"
         android:background="#808080"
         android:id="@+id/garisStatus2"
         android:layout_alignTop="@+id/tulisKomen" />
@@ -100,8 +100,8 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:src="@mipmap/ic_launcher_round"
             android:layout_marginTop="8dp"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
             android:id="@+id/photoMhsK2"
             android:layout_marginBottom="4dp"/>
 

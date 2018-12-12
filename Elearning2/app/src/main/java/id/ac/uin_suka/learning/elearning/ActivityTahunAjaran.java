@@ -12,7 +12,6 @@ public class ActivityTahunAjaran extends AppCompatActivity {
         setContentView(R.layout.activity_tahun_ajaran);
         ActionBar menu = getSupportActionBar();
         menu.setDisplayHomeAsUpEnabled(true);
-        menu.setDisplayHomeAsUpEnabled(true);
         this.setTitle("Tahun Ajaran");
     }
 }
